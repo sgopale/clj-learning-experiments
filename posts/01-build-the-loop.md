@@ -10,7 +10,7 @@ I thought I would try and replicate the same process using Clojure and an OpenAI
 # How chat completions work?
 Before we get to implementing a code-editing agent, let's spend some time understanding how an LLM based chat workflow works. An LLM is a next word (token) prediction engine and it relies on the previous tokens to predict the next word. So, for a chat based experience to work it effectively needs the entire conversation history to generate the next response. This is due to the fact that it is stateless and all the state of the conversation is in the history. It is the client which talks to the LLM which maintains the history of the conversation.
 
-![LLM Completion](images/llm-loop.png)
+![LLM Completion](assets/llm-loop.png)
 
 Each message in the conversation history is tagged with a role attribute - **user** or **assistant**
 
