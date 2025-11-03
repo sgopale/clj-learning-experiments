@@ -5,6 +5,7 @@
   :init (def opts {:blog-title "Learning experiments with Clojure"
                    :blog-description "Trying to use Clojure for everything"
                    :blog-root "https://sgopale.github.io/clj-learning-experiments/"
-                   :assets-dir "posts/images"})
+                   :assets-dir "posts/images"
+                   :twitter-handle "sgopale"})
   quickblog {:doc "Start blogging quickly! Run `bb quickblog help` for details."
              :task (cli/dispatch opts)}}}
