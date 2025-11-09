@@ -1,4 +1,4 @@
-Title: Coding Agent : Part 5 - Add more power to the agent
+Title: Building a Coding Agent : Part 5 - Add more power to the agent
 Date: 2025-11-02
 Tags: Clojure, OpenAI, LLM
 
