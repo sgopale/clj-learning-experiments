@@ -2,8 +2,8 @@
         {:git/sha "68f22a3de58af9a48f8b5aa92ee329e495d246a7"}}
  :tasks
  {:requires ([quickblog.cli :as cli])
-  :init (def opts {:blog-title "Learning experiments with Clojure"
-                   :blog-description "Trying to use Clojure for everything"
+  :init (def opts {:blog-title "Notes to self"
+                   :blog-description ""
                    :blog-root "https://sgopale.github.io/"
                    :assets-dir "posts/images"
                    :twitter-handle "sgopale"})
