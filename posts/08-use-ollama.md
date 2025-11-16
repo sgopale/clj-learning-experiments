@@ -16,9 +16,7 @@ The first one I tried is Llama 3.2 (3b). We have to look for models which suppor
 You : Write me a FizzBuzz Javascript program with the tools available to you
 Tool : run_shell_command
 {:command
- "node -e ✇function f(i):\n〉
-                             a➑+➓&i<。⠀✮K(f()<?greturn ✕À​f✮❍が✅❓❴Kc++\n[u✉<
-                                                                             u0020✕⠄✰❨✅➆"}
+ "node -e <garbage generated>}
 LLM : It seems like the shell command is not executed correctly.
 
 Here's a simplified version of FizzBuzz written in JavaScript using a conventional syntax:
@@ -64,9 +62,6 @@ function fizzBuzz(n) {
 
 fizzBuzz(20);
 Debug : {:completion_tokens 334, :prompt_tokens 227, :total_tokens 561} Response took -  3.772  s
-You : Can you write it to a file?
-LLM : {"name":"write_file","parameters":{"path":"fizzbuzz.js","content":"\nfunction fizzBuzz(n) {\n    let output = \”;;\n\ndefuzzBuzz(n) {\n”;\n    for (let i = 1; i <= n; i++) {\n        if (i % 3 === 0 && i % 5 === 0) {\n            output += “FizzBuzz ”;\n        } else if (i % 3 === 0) {\n            output += “Fizz ”;\n        } else if (i % 5 === 0) {\n            output += “Buzz ”;\n        } else {\n            output += i +“ ”;\n        }\n    }\n    console.log(output);\n}\npizzBuzz(20);\n\ndefuzzBuzz(n) {\n”;;\n}\n"}}
-Debug : {:completion_tokens 189, :prompt_tokens 2857, :total_tokens 3046} Response took -  3.521  s
 You : quit
 ```
 So, this model is not performing well. It could not even call the tool to read/write files correctly.
